@@ -97,7 +97,7 @@ public class SimulationWindow {
 				new Point(84,73),
 				new Point(92,100)};
 		
-		Map map = new Map("C:\\Users\\בר\\OneDrive\\שולחן העבודה\\מדמח\\שנה ג\\רובוטים אוטונומים\\Matala1_Check\\Maps\\p1" + map_num + ".png",startPoints[map_num-1]);
+		Map map = new Map("C:\\Users\\בר\\OneDrive\\שולחן העבודה\\מדמח\\שנה ג\\רובוטים אוטונומים\\Matala1_Simulator\\Maps\\p1" + map_num + ".png",startPoints[map_num-1]);
 
 
 		algo1 = new AutoAlgo1(map);
@@ -130,7 +130,7 @@ public class SimulationWindow {
 		updatesCPU.addFunction(algo1.drone::update);
 		updatesCPU.play();
 		
-		CPU infoCPU = new CPU(6,"update_info");
+		CPU infoCPU = new CPU(10,"update_info");
 		infoCPU.addFunction(this::updateInfo);
 		infoCPU.play();
 	}
